@@ -38,8 +38,14 @@ $sudo nala update
 $sudo nala upgrade
 ```
 
-#### Installing ZSH Plugins
+#### Installing ZSH & ZSH Plugins
 ```sh
+Install Oh My ZSH via Curl
+$sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+Install Oh My ZSH via Wget
+$sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
 Installing ZSH Auto-Suggestions
 $git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
