@@ -40,7 +40,7 @@ $sudo nala upgrade
 
 #### Installing ZSH & ZSH Plugins
 ```sh
-Install Oh My ZSH via Curl
+Install Oh My ZSH via Curl(Installed by default in Kali 2022)
 $sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 Install Oh My ZSH via Wget
@@ -63,7 +63,13 @@ zsh-syntax-highlighting
 
 Save the file
 
+Installing Powerlevel10k
+$git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+echo 'source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
 $source ~/.zshrc
+
+$p10k configure
 ```
 
 
