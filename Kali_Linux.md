@@ -38,5 +38,27 @@ $sudo nala update
 $sudo nala upgrade
 ```
 
+#### Installing ZSH Plugins
+```sh
+Installing ZSH Auto-Suggestions
+$git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+To Enable above plugin
+$vim ~/.zshrc
+plugins= 
+(
+git
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
+
+Save the file
+
+$source ~/.zshrc
+```
+
 
 
